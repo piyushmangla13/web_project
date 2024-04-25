@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+/* each section */
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* the contents*/
+main section div {
+    width: 100%;
+    max-width: 600px;
+}
+/* text */
+section .content-text,
+section .image-container {
+    padding: 10px;
+}
+.content-text h3 {
+    font-size: var(--link);
+    text-transform: uppercase;
+}
+.content-text p {
+    font-size: var(--pre-title);
+    margin-top: 10px;
+    line-height: 2rem;
+}
+/* the image */
+.image-container img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 888px) {
+    main section div{
+        width: 50%;
+    }
+    main section:last-child {
+        flex-direction: row-reverse;
+    }  
+    .content-text h3 {
+      font-size: var(--subtitle);
+      text-transform: uppercase;
+  }
+}

@@ -1,0 +1,27 @@
+.slider-container {
+  width: 100%;
+}
+.slider-container .slider{
+  display: flex;
+  overflow-x: scroll;
+}
+
+/* the scrollbar */
+.slider-container .slider::-webkit-scrollbar {
+  height:6px;
+  border-radius: 5px;
+  opacity: 1;
+  background-color: var(--dark);
+}
+
+.slider-container .slider::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 5px;
+}
+.slider-container .slider::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+.slider-container .slider::-webkit-scrollbar-thumb:active {
+  background: #999;
+}
+/* the scrollbar style ends here */
